@@ -1,0 +1,76 @@
+.about {
+	grid-column: col-start 1 / col-end;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-column-gap: 10rem;
+
+	
+
+	&__img-box {
+		max-width: 50rem;
+		justify-self: center;
+	}
+
+	&__description {
+		font-family: 'Poppins', serif;
+		-webkit-hyphens: auto;
+		color: $light-font;
+		font-size: 1.7rem;
+
+		@include respond (tab-land) {
+			font-size: 1.8em;
+			//text-align: center;
+		}
+	}
+
+	&__text-box {
+		@include respond(tab-land) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+	}
+}
+
+.about-sec-heading {
+	@include respond (tab-land) {
+		text-align: center;
+	}
+}
+.about-svg {
+	width: 100%;
+	height: 100%;
+}
+
+#code {
+	transform: translateX(20rem);
+}
+
+.cv {
+	font-family: 'Poppins', serif;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: $secondary-color;
+	background-color: $dark-font;
+	padding: 1rem 3rem;
+	border: none;
+	outline: none;
+	border-radius: 2rem;
+	text-decoration: none;
+	cursor: pointer;
+	margin-top: 3rem;
+
+	&:hover {
+		background-color: $secondary-color;
+		color: $dark-font;
+	} 
+
+	
+	@include respond (tab-land) {
+		font-size: 1.2em;
+		margin: 5rem auto;
+		
+	}
+}
