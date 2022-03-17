@@ -66,8 +66,8 @@ body {
   height: 100vh; }
   @media screen and (max-width: 75rem) {
     .header {
-      background-color: #f3f4f5;
-      background-image: none;
+      /* background-color: #f3f4f5;
+      background-image: none; */
       text-align: center; } }
 
 .nav-bar {
